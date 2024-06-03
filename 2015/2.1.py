@@ -1,7 +1,7 @@
 # Day 2 - Part 1
 
 
-def calculateWrappingPaperArea(dimensions):
+def calculate_wrapping_paper_area(dimensions):
     l, w, h = map(int, dimensions.split("x"))
     return 2 * (l * w + w * h + l * h) + min(l * w, w * h, l * h)
 
@@ -1010,5 +1010,5 @@ if __name__ == "__main__":
 
     required_wrapping_paper = 0
     for d in dms.split("\n"):
-        required_wrapping_paper += calculateWrappingPaperArea(d.strip())
+        required_wrapping_paper += calculate_wrapping_paper_area(d.strip())
     print(required_wrapping_paper)

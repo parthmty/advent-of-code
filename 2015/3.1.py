@@ -5,7 +5,7 @@ def calculate_houses(directions):
     x = 0
     y = 0
 
-    visited_houses = {}
+    visited_houses = {"0.0": 0}
     for d in directions:
         if d == ">":
             x += 1
